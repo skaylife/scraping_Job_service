@@ -9,6 +9,8 @@
 		<div class="card-body">
 			<h5 class="card-title"><a href="{{ obj.url }}">{{ obj.title }}</a></h5>
 			<p class="card-text">{{ obj.description }}</p>
+			<p>{{ obj.city.name }} | {{ obj.language.name }} | <small>{{obj.timestamp|date:"d M Y"}}</small> </p>
+
 		</div>
 	</div>
 	{% endfor %}
