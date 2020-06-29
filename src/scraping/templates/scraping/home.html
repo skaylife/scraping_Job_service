@@ -10,12 +10,20 @@
 			<h5 class="card-title"><a href="{{ obj.url }}">{{ obj.title }}</a></h5>
 			<p class="card-text">{{ obj.description }}</p>
 			<p>{{ obj.city.name }} | {{ obj.language.name }} | <small>{{obj.timestamp|date:"d M Y"}}</small> </p>
-
 		</div>
 	</div>
 	{% endfor %}
 
 
+<form method="GET" action="">
+
+
+  <div class="form-group">
+	{{form.as_p }}
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
 
 
 
