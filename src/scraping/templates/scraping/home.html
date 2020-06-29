@@ -12,21 +12,24 @@
 			<p>{{ obj.city.name }} | {{ obj.language.name }} | <small>{{obj.timestamp|date:"d M Y"}}</small> </p>
 		</div>
 	</div>
+
+
+
 	{% endfor %}
 
 
 <form method="GET" action="">
-
-
   <div class="form-group">
-	{{form.as_p }}
+	  	<div class="col-md-8 mx-auto">
+
+		    <h4 class="my-2">Для просмотра доступных вакансий, заполните форму по одному из полей (либо город, либо язык программирования)</h4>
+
+			    {{form.as_p }}
+
+			<button type="submit" class="btn btn-primary">Submit</button>
+	    </div>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-
 </form>
-
-
-
 
 
 {% endblock %}
