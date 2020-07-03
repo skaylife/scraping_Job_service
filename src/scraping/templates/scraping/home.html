@@ -6,9 +6,12 @@
 
 	{% for obj in objects_list %}
 	<div class="card my-3">
+		<h5 class="card-header"><a href="{{ obj.url }}">{{ obj.title }}</a></h5>
 		<div class="card-body">
-			<h5 class="card-title"><a href="{{ obj.url }}">{{ obj.title }}</a></h5>
+
 			<p class="card-text">{{ obj.description }}</p>
+
+			<h5>Компания - {{ obj.company }}</h5>
 			<p>{{ obj.city.name }} | {{ obj.language.name }} | <small>{{obj.timestamp|date:"d M Y"}}</small> </p>
 		</div>
 	</div>
